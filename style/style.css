@@ -1,1 +1,143 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.contact-cards {
+  padding-top: 20px;
+}
+
+.contact-cards__card-item {
+  position: relative;
+  -webkit-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.25);
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 48%;
+  height: 150px;
+  border-radius: 145px;
+  margin-right: 47px;
+  margin-bottom: 40px;
+}
+
+.contact-cards__card-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.contact-cards__row {
+  position: absolute;
+}
+
+.contact-cards__row:nth-child(1) {
+  left: 0;
+}
+
+.contact-cards__row:nth-child(2) {
+  right: 60px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact-cards__row:nth-child(3) {
+  left: 45%;
+  top: 50%;
+  -webkit-transform: translate(-45%, -50%);
+          transform: translate(-45%, -50%);
+}
+
+.contact-cards__image-wrapper {
+  width: 150px;
+}
+
+.contact-cards__image {
+  border: 1px solid #c4c4c4;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-cards__description {
+  width: 60%;
+}
+
+.contact-cards__name {
+  margin-bottom: 5px;
+  font-size: 32px;
+  line-height: 1.0;
+}
+
+.contact-cards__job, .contact-cards__no-telp {
+  color: #ACACAC;
+  line-height: 1.6;
+}
+
+.contact-cards__job {
+  font-size: 18px;
+}
+
+.contact-cards__no-telp {
+  font-size: 16px;
+}
+
+.contact-cards__button {
+  border: 1px solid;
+  position: relative;
+  border-radius: 50%;
+  background-color: #c62828;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact-cards__button span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact-cards__button:hover {
+  color: #c62828;
+  background-color: #fff;
+  border-color: #c62828;
+}
+
+.contact-cards__centered-text {
+  position: absolute;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

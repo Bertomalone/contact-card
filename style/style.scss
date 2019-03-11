@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    &::before, &::after {
+        content: "";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.contact-cards {
+    padding-top: 20px;
+
+    &__card-item {
+        position: relative;
+        box-shadow: 5px 0 10px 0 rgba(0,0,0,0.25);
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 48%;
+        height: 150px;
+        border-radius: 145px;
+        margin-right: 47px;
+        margin-bottom: 40px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+        position: absolute;
+
+        &:nth-child(1) {
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            right: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:nth-child(3) {
+            left: 45%;
+            top: 50%;
+            transform: translate(-45%, -50%);
+        }
+    }
+
+    &__image-wrapper {
+        width: 150px;
+    }
+
+    &__image {
+        border: 1px solid #c4c4c4;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    &__description {
+        width: 60%;   
+    }
+
+    &__name {
+        margin-bottom: 5px;
+        font-size: 32px;
+        line-height: 1.0;
+    }
+
+    &__job, &__no-telp {
+        color: #ACACAC;
+        line-height: 1.6;
+    }
+
+    &__job {
+        font-size: 18px;
+    }
+
+    &__no-telp {
+        font-size: 16px;
+    }
+
+    &__button {
+        border: 1px solid;
+        position: relative;
+        border-radius: 50%;
+        background-color: #c62828;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 800;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+
+        span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            color: #c62828;
+            background-color: #fff;
+            border-color: #c62828;
+        }
+    }
+
+    &__centered-text {
+        position: absolute;
+        right: 0;
+    }
+}
