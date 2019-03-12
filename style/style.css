@@ -40,13 +40,9 @@ body {
       align-content: center;
   width: 48%;
   height: 150px;
+  margin: 11.81px;
+  margin-bottom: 20px;
   border-radius: 145px;
-  margin-right: 47px;
-  margin-bottom: 40px;
-}
-
-.contact-cards__card-item:nth-child(2n) {
-  margin-right: 0;
 }
 
 .contact-cards__row {
@@ -58,10 +54,10 @@ body {
 }
 
 .contact-cards__row:nth-child(2) {
-  right: 60px;
+  left: 70%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-70%, -50%);
+          transform: translate(-70%, -50%);
 }
 
 .contact-cards__row:nth-child(3) {
@@ -86,6 +82,7 @@ body {
 
 .contact-cards__description {
   width: 60%;
+  text-align: center;
 }
 
 .contact-cards__name {
@@ -122,15 +119,17 @@ body {
   transition: all .3s ease-in-out;
 }
 
-.contact-cards__button span {
+.contact-cards__button::before {
+  content: "x";
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 .contact-cards__button:hover {
+  cursor: pointer;
   color: #c62828;
   background-color: #fff;
   border-color: #c62828;

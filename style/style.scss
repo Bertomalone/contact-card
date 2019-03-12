@@ -35,13 +35,9 @@ body {
         align-content: center;
         width: 48%;
         height: 150px;
+        margin: 11.81px;
+        margin-bottom: 20px;
         border-radius: 145px;
-        margin-right: 47px;
-        margin-bottom: 40px;
-
-        &:nth-child(2n) {
-            margin-right: 0;
-        }
     }
 
     &__row {
@@ -52,9 +48,9 @@ body {
         }
 
         &:nth-child(2) {
-            right: 60px;
+            left: 70%;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translate(-70%, -50%);
         }
 
         &:nth-child(3) {
@@ -78,6 +74,7 @@ body {
 
     &__description {
         width: 60%;   
+        text-align: center;
     }
 
     &__name {
@@ -112,14 +109,16 @@ body {
         text-decoration: none;
         transition: all .3s ease-in-out;
 
-        span {
+        &::before {
+            content: "x";
             position: absolute;
-            left: 50%;
             top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
         }
 
         &:hover {
+            cursor: pointer;
             color: #c62828;
             background-color: #fff;
             border-color: #c62828;
@@ -131,3 +130,4 @@ body {
         right: 0;
     }
 }
+
